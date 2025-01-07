@@ -1,0 +1,81 @@
+{
+  "name": "human-mimicry",
+  "version": "0.1.0",
+  "description": "",
+  "homepage": "https://github.com/yet-it-compiles/human-mimicry",
+  "bugs": "https://github.com/yet-it-compiles/human-mimicry/issues",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "Tyler (Yet.it.Compiles)",
+  "funding": [
+    {
+      "type": "GitHub",
+      "url": "https://github.com/sponsors/yet-it-compiles"
+    },
+    {
+      "type": "CashApp",
+      "url": "https://cash.app/$atYetitCompiles"
+    },
+    {
+      "type": "buymeacoffee",
+      "url": "https://buymeacoffee.com/yet.it.compiles"
+    }
+  ],
+  "exports": {
+    ".": {
+      "import": "./src/main.jsx"
+    }
+  },
+  "main": "./src/main.js",
+  "type": "module",
+  "directories": {
+    "docs": "docs",
+    "backend": "backend"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "npm run dev",
+    "dev:debug": "vite --debug",
+    "build:clean": "npm run clean && npm run build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist && rm -rf coverage && rm -rf .cache",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "format": "prettier --write '**/*.{js,jsx,html,css,scss}'",
+    "lint": "eslint --config .config/eslint.config.js .",
+    "lint:fix": "eslint --ext .js,.jsx,.html,.css,.scss . --fix",
+    "polish": "prettier --write . && eslint --ext .js,.jsx,.html,.css,.scss . --fix"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "eslint-plugin-html": "^8.1.2",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-stylelint": "^0.1.1",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-css-modules": "^2.12.0",
+    "eslint-plugin-react-refresh": "^0.4.16"
+  },
+  "keywords": [
+    "vite",
+    "react",
+    "jest",
+    "eslint",
+    "wallaby",
+    "prettier",
+    "playwright",
+    "human-mimicry"
+  ],
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=11.0.0"
+  },
+  "os": [
+    "win32"
+  ]
+}
