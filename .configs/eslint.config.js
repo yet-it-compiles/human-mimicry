@@ -19,22 +19,25 @@
  *
  * @exports Object - ESLint configuration object
  */
+import htmlPlugin from 'eslint-plugin-html';
 import reactPlugin from 'eslint-plugin-react';
 import prettierPlugin from 'eslint-plugin-prettier';
+import cssModulesPlugin from 'eslint-plugin-css-modules';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactRefreshPlugin from 'eslint-plugin-react-refresh';
 
 export default [
     {
         files: ['**/*.{js,jsx,html,css,scss}'],
+        ignores: ['dist/**', '**/*.css', 'coverage/**', 'node_modules/**'],
         languageOptions: {
             ecmaVersion: 2024,
             sourceType: 'module',
             globals: {
+                global: 'readonly',
                 window: 'readonly',
-                document: 'readonly',
                 console: 'readonly',
-                global: true,
+                document: 'readonly',
             },
         },
         settings: {
@@ -44,7 +47,6 @@ export default [
             'html': htmlPlugin,
             'react': reactPlugin,
             'prettier': prettierPlugin,
-            'stylelint': stylelintPlugin,
             'react-hooks': reactHooksPlugin,
             'css-modules': cssModulesPlugin,
             'react-refresh': reactRefreshPlugin,
@@ -59,7 +61,6 @@ export default [
             'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
             'prettier/prettier': 'error',
             'css-modules/no-unused-class': 'warn',
-            'stylelint/declaration-no-important': 'error',
         },
     },
 ];

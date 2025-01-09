@@ -26,7 +26,16 @@ export default {
     arrowParens: 'always',
     requirePragma: false,
     insertPragma: false,
-    proseWrap: 'always',
+    proseWrap: 'preserve',
     endOfLine: 'lf',
     htmlWhitespaceSensitivity: 'css',
+
+    overrides: [
+        {
+            files: '*.md',
+            options: {
+                printWidth: 160,
+            },
+        },
+    ],
 };
