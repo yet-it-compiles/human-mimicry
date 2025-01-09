@@ -56,16 +56,16 @@
     "playwright-extra-plugin-stealth": "^0.0.1"
   },
   "devDependencies": {
-    "eslint": "^9.17.0",
-    "eslint-plugin-css-modules": "^2.12.0",
-    "eslint-plugin-html": "^8.1.2",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.37.3",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
-    "prettier": "^3.4.2",
     "quokka": "^0.0.7",
-    "wallaby": "^1.0.1"
+    "wallaby": "^1.0.1",
+    "prettier": "^3.4.2",
+    "eslint": "^9.17.0",
+    "eslint-plugin-html": "^8.1.2",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-css-modules": "^2.12.0",
+    "eslint-plugin-react-refresh": "^0.4.16"
   },
   "keywords": [
     "jest",
